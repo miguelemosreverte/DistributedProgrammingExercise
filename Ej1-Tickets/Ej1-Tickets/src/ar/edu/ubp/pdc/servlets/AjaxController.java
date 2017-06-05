@@ -47,13 +47,9 @@ public class AjaxController extends HttpServlet {
 		System.out.println("ESTOY EN EL POST");
 		response.setContentType("text/html;charset=ISO-8859-1");
 	    String busqueda = request.getParameter("busqueda");
+	    String filtro = request.getParameter("ordenarpor");
 	    PrintWriter out = response.getWriter();
 	           
-	    out.println("Tu Busqueda :"+ busqueda);
-	           
-	            
-	          /*String  filtro = String.valueOf(request.getParameter("ordenarpor"));
-	          
 	          System.out.println(busqueda);
 	          System.out.println (filtro);
 
@@ -67,7 +63,7 @@ public class AjaxController extends HttpServlet {
 	        request.setAttribute("listadetickets", TipoTicketBeanList);
 	        request.setAttribute("tag-function", fun);
 	        this.gotoPage("/main.jsp", request, response);
-	*/
+	
 
 	}
 	

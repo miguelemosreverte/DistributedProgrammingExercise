@@ -10,14 +10,14 @@ $(document).ready(function() {
 
 var jTicket = {        
         add: function() {
-                var busqueda = $('#idSAT').val();
-                alert("Estas usando la funcion ADD");
-                $.ajax({
-                    type :"POST",
-                    data :{busqueda:busqueda},
-                    url : './index.jsp',
-                    success : function(result){ $('#main').html(result); }
-                });
+            var busqueda = $('#idSAT').val();
+            var filtro = $('input[name=ordenarpor]:checked', '#idformulario').val()
+            $.ajax({
+                type :"POST",
+                data :{busqueda:busqueda},
+                url : './index.jsp',
+                success : function(result){ $('#main').html(result); }
+            });
             
         },
 };
