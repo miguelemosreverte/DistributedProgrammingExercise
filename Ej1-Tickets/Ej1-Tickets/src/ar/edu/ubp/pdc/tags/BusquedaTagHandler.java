@@ -30,7 +30,7 @@ public class BusquedaTagHandler extends SimpleTagSupport {
                +"<input type=\"radio\" name=\"ordenarpor\" value=\"S\" > Solicitante"
                +"<input type=\"radio\" name=\"ordenarpor\" value=\"F\" checked> Fecha"
                +"<input type=\"radio\" name=\"ordenarpor\" value=\"T\"> Nro. de Ticket<br>"
-               +"<input type=\"submit\" id =\"bttsubmit\" name=\"botonbuscar\" value=\"Buscar\" "
+               +"<input type=\"button\" id =\"bttsubmit\" name=\"botonbuscar\" value=\"Buscar\" "
                + "onclick =\" "+var_function+"\" >"
              +"<div>"
                +"</form> ");

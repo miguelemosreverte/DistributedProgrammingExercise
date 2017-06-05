@@ -10,7 +10,6 @@ $(document).ready(function() {
 
 var jTicket = {        
         add: function() {
-            $('#bttsubmit').click(function(){
                 var busqueda = $('#idSAT').val();
                 alert("Estas usando la funcion ADD");
                 $.ajax({
@@ -19,7 +18,7 @@ var jTicket = {
                     url : './index.jsp',
                     success : function(result){ $('#main').html(result); }
                 });
-            });
+            
         },
 };
 
